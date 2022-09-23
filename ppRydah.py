@@ -89,8 +89,7 @@ for x in range(10):
 	l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
 	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
 	def jalan(z):
-    
-def uaku():
+    def uaku():
 	try:
 		ua=open('useragent.txt','r').read().splitlines()
 		for ub in ua:

@@ -89,16 +89,7 @@ for x in range(10):
 	l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
 	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
 	def jalan(z):
-    for e in z + '\n':
-        sys.stdout.write(e)
-        sys.stdout.flush()
-        time.sleep(0.03)
-try:
-	os.system('curl https://raw.githubusercontent.com/RydahXyber/rydahbrute/main/socks4.txt')
-except:
-	pass
-sock=open('socks4.txt','r').read().splitlines()
-	
+    
 def uaku():
 	try:
 		ua=open('useragent.txt','r').read().splitlines()

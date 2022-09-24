@@ -163,7 +163,7 @@ def chk():
 
   try: 
 
-    httpCaht = requests.get("https://github.com/RydahXyber/Hacker/blob/main/Use.txt").text 
+    httpCaht = requests.get("https://raw.githubusercontent.com/RydahXyber/rydahbrute/main/uses.txt").text 
 
     if id in httpCaht: 
 

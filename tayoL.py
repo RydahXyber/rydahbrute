@@ -291,7 +291,7 @@ def result():
 			time.sleep(2)
 			back()
 		if len(vin)==0:
-			print('<•> You Don't Have File OK ')
+			print('<•> You Don't Have Ok File')
 			time.sleep(2)
 			back()
 		else:

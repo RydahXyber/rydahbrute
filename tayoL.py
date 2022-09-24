@@ -141,10 +141,10 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(nel('\t• RSCT NIG BASED FB BRUTE •'))
+	cetak(nel('\t       • RSCT NIG BASED FB BRUTE •'))
 #  print(f'\t THE MEMEKERS  ')
-	print(f'\t  Author <•> RYDAH XYBER ')
-	print(f'\t    Whatsapp <•> 2349017624430 ')
+	print(f'\t            Author <•> RYDAH XYBER ')
+	print(f'\t            Whatsapp <•> 2349017624430 ')
 #--------------------[ PARTS-IN ]--------------#
 def login():
 	try:

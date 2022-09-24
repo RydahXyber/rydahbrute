@@ -141,7 +141,7 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	print(f'\t       RSCT TEAM NIG. ')
+	cetak(nel('\t• RSCT NIG BASED FB BRUTE •'))
 #  print(f'\t THE MEMEKERS  ')
 	print(f'\t  Author <•> RYDAH XYBER ')
 	print(f'\t    Whatsapp <•> 2349017624430 ')

@@ -61,7 +61,7 @@ for xd in range(10000):
 	o=random.randrange(3987,5112)
 	p=random.randrange(40,150)
 	q='Mobile Safari/537.36'
-	uaku=(f'{a} {b}; {c} {d}{e}{f}{g}{h}) {i}{j}{k} {l}{m}{n}{0}{p} {q}')
+	uaku=(f'{a} {b}; {c} {d}{e}{f}{g}{h}) {i}{j}{k} {l}{m}.{n}.{0}.{p} {q}')
 	ugen2.append(uaku)
 
 
@@ -73,8 +73,8 @@ for xd in range(10000):
 	f=random.randrange(100,999)
 	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	h='Build/PPR1.'
-	i=random.randrange(111111,199999)
-	j='011'
+	i=random.randrange(111111,19999)
+	j='.011'
 	k='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/'
 	l=random.randrange(1,9)
 	m=random.randrange(0,2)
@@ -84,7 +84,7 @@ for xd in range(10000):
 	q=random.randrange(3987,5112)
 	r=random.randrange(40,150)
 	s='Mobile Safari/537.36'
-	uaku2=f'{aa} {b}; {c} {d}{e}{f}{g} {h}){i}{j}) {k}{l}{m} {n}{0}{p}{q}{r} {s}'
+	uaku2=f'{aa} {b}; {c} {d}{e}{f}{g} {h}{i}{j}) {k}{l}{m} {n}{0}.{p}.{q}.{r} {s}'
 	ugen.append(uaku2)
 for x in range(10):
 	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-'

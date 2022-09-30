@@ -45,34 +45,46 @@ except Exception as e:
 prox=open('socks4.txt','r').read().splitlines()
 for xd in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c='Infinix'
-	d=random.choice(['X688B','X688C','X660C','X660B','X660','X608','X60D'])
-	e='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	f=random.randrange(73,104)
-	g='0'
-	h=random.randrange(3987,5112)
-	i=random.randrange(40,150)
-	j='Mobile Safari/537.36'
-	uaku=(f'{a} {b}; {c} {d}) {e}{f}.{g}.{h}.{i} {j}')
+	b=random.randint(9,12)
+	c='SAMSUNG'
+	d='SM-'
+	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	f=random.randint(100, 999)
+	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	h=random.randint(1,9)
+	i='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/'
+	j=random.randint(1,20)
+	k=random.randint(0,9)
+	l='Chrome/'
+	m=random.randrange(50,104)
+	n='0'
+	o=random.randrange(3987,5112)
+	p=random.randrange(40,150)
+	q='Mobile Safari/537.36'
+	uaku2=f'{a} {b}; {c} {d}{e}{f}{g}{h}) {i}{j}{k} {l}{m}{n}{0}{p} {q}
 	ugen2.append(uaku)
 
 
 	aa='Mozilla/5.0 (Linux; Android'
-	b=random.randint(8,12)
-	c='Redmi'
-	d=random.randint(4,9)
-	e='Build/PPR1'
-	f=random.randint(111111,199999)
-	g='011'
-	h='en-us'
-	i='AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/79.0'
-	j=random.randint(111,9999)
-	k='136 Mobile Safari/537.36'
-	l='Puffin/9.7.2'
-	m=random.randint(1111,99999)
-	n='AP'
-	uaku2=f'{aa} {b}; {c} {d} {e}.{f}.{g}; {h}) {i}.{j}.{k} {l}{m}{n}'
+	b=random.randint(9,12)
+	c='SAMSUNG'
+	d='SM-'
+	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	f=random.randint(100, 999)
+	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	h='Build/PPR1.'
+	i=random.randint(111111,19999)
+	j='011'
+	k='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/'
+	l=random.randint(1,9)
+	m=random.randint(0,2)
+	n='Chrome/'
+	o=random.randrange(50,104)
+	p='0'
+	q=random.randrange(3987,5112)
+	r=random.randrange(40,150)
+	s='Mobile Safari/537.36'
+	uaku2=f'{aa} {b}; {c} {d}{e}{f}{g} {h}){i}{j}) {k}{l}{m} {n}{0}{p}{q}{r} {s}
 	ugen.append(uaku2)
 for x in range(10):
 	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-'

@@ -84,7 +84,7 @@ for xd in range(10000):
 	q=random.randrange(3987,5112)
 	r=random.randrange(40,150)
 	s='Mobile Safari/537.36'
-	uaku2=f'{aa} {b}; {c} {d}{e}{f}{g} {h}){i}{j}) {k}{l}{m} {n}{0}{p}{q}{r} {s}
+	uaku2=f'{aa} {b}; {c} {d}{e}{f}{g} {h}){i}{j}) {k}{l}{m} {n}{0}{p}{q}{r} {s}'
 	ugen.append(uaku2)
 for x in range(10):
 	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-'

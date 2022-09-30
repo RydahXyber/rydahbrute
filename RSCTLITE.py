@@ -61,7 +61,7 @@ for xd in range(10000):
 	o=random.randrange(3987,5112)
 	p=random.randrange(40,150)
 	q='Mobile Safari/537.36'
-	uaku=f'{a} {b}; {c} {d}{e}{f}{g}{h}) {i}{j}{k} {l}{m}{n}{0}{p} {q}
+	uaku=(f'{a} {b}; {c} {d}{e}{f}{g}{h}) {i}{j}{k} {l}{m}{n}{0}{p} {q}')
 	ugen2.append(uaku)
 
 

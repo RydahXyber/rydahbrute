@@ -38,8 +38,8 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-	prox= requests.get('https://raw.githubusercontent.com/RydahXyber/rydahbrute/main/.proxy.txt').text
-	open('.proxy.txt','w').write(prox)
+	prox= requests.get('https://raw.githubusercontent.com/UptimerBot/proxy-list/main/proxies/socks4.txt -o socks4.txt').text
+	open('socks4.txt','w').write(prox)
 except Exception as e:
 	print('[[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mAlvino_adijaya_xy')
 prox=open('socks4.txt','r').read().splitlines()
@@ -54,25 +54,25 @@ for xd in range(10000):
 	h=random.randrange(3987,5112)
 	i=random.randrange(40,150)
 	j='Mobile Safari/537.36'
-	uaku=(f'{a} {b}; {c} {d}) {e}{f}.{g}.{h}.{i} {j}
+	uaku=(f'{a} {b}; {c} {d}) {e}{f}.{g}.{h}.{i} {j}')
 	ugen2.append(uaku)
 
 
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.randint(8,12)
-	c='Redmi
+	c='Redmi'
 	d=random.randint(4,9)
 	e='Build/PPR1'
 	f=random.randint(111111,199999)
 	g='011'
 	h='en-us'
-	i='AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/79.0
+	i='AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/79.0'
 	j=random.randint(111,9999)
-	k='136 Mobile Safari/537.36
-	l=Puffin/9.7.2
+	k='136 Mobile Safari/537.36'
+	l='Puffin/9.7.2'
 	m=random.randint(1111,99999)
 	n='AP'
-	uaku2=f'{aa} {b}; {c} {d} {e}.{f}.{g}; {h}) {i}.{j}.{k} {l}{m}{n}
+	uaku2=f'{aa} {b}; {c} {d} {e}.{f}.{g}; {h}) {i}.{j}.{k} {l}{m}{n}'
 	ugen.append(uaku2)
 for x in range(10):
 	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-'

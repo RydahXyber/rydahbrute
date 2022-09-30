@@ -73,7 +73,7 @@ for xd in range(10000):
 	f=random.randrange(100,999)
 	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	h='Build/PPR1.'
-	i=random.randrange(111111,19999)
+	i=random.randrange(111111, 19999)
 	j='.011'
 	k='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/'
 	l=random.randrange(1,9)

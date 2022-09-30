@@ -49,12 +49,12 @@ for xd in range(10000):
 	c='SAMSUNG'
 	d='SM-'
 	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	f=random.randint(100, 999)
+	f=random.randrange(100, 999)
 	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	h=random.randint(1, 9)
+	h=random.randrange(1, 9)
 	i='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/'
-	j=random.randint(1, 20)
-	k=random.randint(0, 9)
+	j=random.randrange(1, 20)
+	k=random.randrange(0, 9)
 	l='Chrome/'
 	m=random.randrange(50,104)
 	n='0'
@@ -66,18 +66,18 @@ for xd in range(10000):
 
 
 	aa='Mozilla/5.0 (Linux; Android'
-	b=random.randint(9,12)
+	b=random.randrange(9,12)
 	c='SAMSUNG'
 	d='SM-'
 	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	f=random.randint(100, 999)
+	f=random.randrange(100, 999)
 	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
 	h='Build/PPR1.'
-	i=random.randint(111111, 19999)
+	i=random.randrange(111111, 19999)
 	j='011'
 	k='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/'
-	l=random.randint(1,9)
-	m=random.randint(0,2)
+	l=random.randrange(1,9)
+	m=random.randrange(0,2)
 	n='Chrome/'
 	o=random.randrange(50,104)
 	p='0'

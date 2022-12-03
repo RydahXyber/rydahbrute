@@ -54,7 +54,8 @@ for xd in range(10000):
 	h=random.randrange(1,4)
 	i=random.randrange(1,4)
 	j=random.randrange(1,4)
-	k='Chrome/75.0.3396.81	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
+	k='Chrome/75.0.3396.81
+	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
 	
 	
